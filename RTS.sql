@@ -15,7 +15,7 @@ INSERT INTO troops (name, description, damage, distance damage, defence) VALUES 
 INSERT INTO troops (name, description, damage, distance damage, defence) VALUES (rycerz, najlepsza jednostka,30,0,20)
 
 @resources
-INSERT INTO resources (name, description) VALUES (drewno, podstawa imperium bez niego nic nie zrobisz)
+INSERT INTO resources (name, description) VALUES (drewno, podstawa imperium bez tego nic nie zrobisz)
 INSERT INTO resources (name, description) VALUES (glina, no z tego juz mozesz kombinowac ale nie polecam za dużo jedynie do garnków)
 INSERT INTO resources (name, description) VALUES (zelazo, żelazo najmocniejsze wiadomo zawsze warto mieć zwłaszcza do jednostek)
 
@@ -23,3 +23,6 @@ INSERT INTO resources (name, description) VALUES (zelazo, żelazo najmocniejsze 
 INSERT INTO buildings (name) VALUES (dół z glina)
 INSERT INTO buildings (name) VALUES (huta żelaza)
 INSERT INTO buildings (name) VALUES (chata drwala)
+
+@login
+FROM player SELECT id WHERE password LIKE "fab123" AND email LIKE "email@gmail.com"
